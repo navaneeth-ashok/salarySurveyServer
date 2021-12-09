@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p The Frontend is under construction, the link to which will be published soon
+
+  div.documentation 
+    h2= "API Docs"
+    p Resource URL :  https://api-service/getSalaryData
+    h3= "Structure of the Salary Data"
+      div
+        a(href='/sampleResult') Sample JSON Result
+
+    h3= "Implemented functionalities"
+      ul
+        each val in ['filter', 'skip', 'limit', 'sort', 'select', 'populate']
+          li= val 
+  
+    h3= "Sample Requests"
+    p GET : https://api-service/getSalaryData?base_salary<50000&sort=-year
