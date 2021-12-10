@@ -3,12 +3,15 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  p This is just an api endpoint 
-  p Angular based front-end is here
+  p This is the api endpoint 
+  p Angular front end link
+  ul 
+    li <a href='http://salary-app.navaneeth.dev/'>salary-app.navaneeth.dev</a>
+    li <a href='https://cs-salary-app.uc.r.appspot.com/'>cs-salary-app.uc.r.appspot.com  (Mirror)</a>
 
   div.documentation 
     h2= "API Docs"
-    p Resource URL :  https://api-service/getSalaryData
+    p Resource URL :  https://back-end-dot-cs-salary-app.uc.r.appspot.com/getSalaryData
     h3= "Structure of the Salary Data"
       div
         a(href='/sampleResult') Sample JSON Result
@@ -19,4 +22,4 @@ block content
           li= val 
   
     h3= "Sample Requests"
-    p GET : https://api-service/getSalaryData?base_salary<50000&sort=-year
+    p GET : <a href='https://back-end-dot-cs-salary-app.uc.r.appspot.com/getSalaryData?base_salary<50000&sort=-year'>https://back-end-dot-cs-salary-app.uc.r.appspot.com/getSalaryData?base_salary<50000&sort=-year</a>
