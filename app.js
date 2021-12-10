@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 const corsOptions = {
-  origin: ["http://localhost:4200"],
+  origin: ["http://localhost:4200", "https://cs-salary-app.uc.r.appspot.com"],
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
