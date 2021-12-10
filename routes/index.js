@@ -5,12 +5,22 @@ const filterData = require("../models/filterData");
 const { payload, salaryPayload, Payload } = require("../models/payload");
 const aqp = require("api-query-params");
 
+// Global variable
+let requestCount = 0;
+
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.render("index", { title: "Salary Survey App" });
 });
 
 router.get("/getSalaryData", function (req, res, next) {
+  console.log(
+    ++requestCount +
+      "    :    " +
+      Date(Date.now()) +
+      "    :    " +
+      JSON.stringify(req.query)
+  );
   const { filter, skip, limit, sort, projection, population } = aqp(req.query);
   salaryData
     .find(filter)

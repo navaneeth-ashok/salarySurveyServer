@@ -45,9 +45,9 @@ mongoose
   .connect(url, connectionParams)
   .then(() => {
     console.log("Connected to database ");
-    app.listen(3000, () => {
-      console.log("App is listening for requests");
-    });
+    // app.listen(3000, () => {
+    //   console.log("App is listening for requests");
+    // });
   })
   .catch((err) => {
     console.error(`Error connecting to the database. \n${err}`);
