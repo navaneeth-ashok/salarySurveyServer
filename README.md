@@ -68,6 +68,13 @@ GET : https://back-end-dot-cs-salary-app.uc.r.appspot.com/getSalaryData?location
 - ExpressJS
 - MongoDB Atlas
 
+## Run the project
+
+1. Clone the project
+2. cd to the directory
+3. npm install
+4. npm start
+
 ## Related Projects
 
 - [Salary CSV to JSON Converter : Python](https://github.com/navaneeth-ashok/salary_survey_csv_converter)
