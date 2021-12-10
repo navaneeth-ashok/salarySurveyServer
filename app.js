@@ -24,7 +24,7 @@ const corsOptions = {
   origin: [
     "http://localhost:4200",
     "https://cs-salary-app.uc.r.appspot.com",
-    "http://salary-app.navaneeth.dev",
+    "https://salary-app.navaneeth.dev",
   ],
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
