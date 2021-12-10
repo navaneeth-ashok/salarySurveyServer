@@ -43,7 +43,7 @@ const salarySchema = new Schema({
     required: false,
   },
   year: {
-    type: Number,
+    type: String,
     required: false,
   },
   industry: {

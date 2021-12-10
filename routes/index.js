@@ -60,15 +60,15 @@ router.get("/getSalaryData", function (req, res, next) {
         salaryItemArray.push(salaryItem);
       }
       const filterPayload = new filterData(
-        [...locationSet],
-        [...titleSet],
-        [...experienceSet],
-        [...educationSet],
-        [...bootcampSet],
-        [...yearSet],
-        [...industrySet],
-        [...faangSet],
-        [...companySizeSet]
+        [...locationSet].sort(),
+        [...titleSet].sort(),
+        [...experienceSet].sort(),
+        [...educationSet].sort(),
+        [...bootcampSet].sort(),
+        [...yearSet].sort(),
+        [...industrySet].sort(),
+        [...faangSet].sort(),
+        [...companySizeSet].sort()
       );
       const payloadToSent = new Payload(salaryItemArray, filterPayload);
       res.send(payloadToSent);
